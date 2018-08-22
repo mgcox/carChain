@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Decentral Rental</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Decentral Rental</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="carsRow" class="row">
+        <!-- CARS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="carTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-car">
+          <div class="panel-heading">
+            <h3 class="panel-title">Honda Civic</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjB_MDqk4DdAhUPJ3wKHRMdAjMQjRx6BAgBEAU&url=https%3A%2F%2Fwww.stingraychevrolet.com%2Fchevrolet-camaro%2F&psig=AOvVaw2ZBigmse0COp35c5jZ0Tlz&ust=1535009936731741" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Type</strong>: <span class="car-type">Chevy Camaro</span><br/>
+            <strong>Year</strong>: <span class="car-year">2018</span><br/>
+            <strong>Cost</strong>: <span class="car-cost">$58/Day</span><br/><br/>
+            <button class="btn btn-default btn-rent" type="button" data-id="0">Rent</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
