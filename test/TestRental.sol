@@ -39,7 +39,7 @@ contract TestRental {
     //Test retrieval of car info 
     function testGetRentalCarInfo()  public {
     	//Ensure info matches the info added upon submission of first car 
-    	 (string memory make, bool  availability, uint  year, uint  carID) =  rental.getRentalCarInfo(0);
+    	 (string memory make, , , , bool  availability, uint  year, uint  carID) =  rental.getRentalCarInfo(0);
 
     	 //Validate Make was accurately provided
     	Assert.equal(make,"Ford","Make was not stored properly");
@@ -51,7 +51,7 @@ contract TestRental {
     	Assert.equal(year,2018 ,"Make was not stored properly");
 
     	//Validate the ID is correct
-    	Assert.equal(carID,1,"CarId was not stored properly");
+    	Assert.equal(carID,0,"CarId was not stored properly");
     }
 
     //Verify the count of the cars is accurate 
@@ -84,7 +84,7 @@ contract TestRental {
     //Verify that after car was rented, it is no longer available
     function testAvailabilityBool() public {
     	//Ensure bool indicates car is no longer available  
-    	(, bool  availability, ,) =  rental.getRentalCarInfo(0);
+    	(, , , , bool  availability, , ) =  rental.getRentalCarInfo(0);
 
     	//Validate that the car is not available
     	Assert.equal(availability, false ,"Availability was not stored properly");
