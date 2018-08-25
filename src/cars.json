@@ -1,130 +1,22 @@
 [
   {
-    "id": 0,
     "make": "Ford Fusion",
     "picture": "images/camaro.jpg",
+    "isAvailable": false,
+    "rentee":"0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
+    "owner":  "0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
     "year": 2018,
-    "licenseNumber": "Scottish Terrier",
-    "cost": "Lisco, Alabama"
+    "licenseNumber": "165415641",
+    "carId": 0
   },
-  {
-    "id": 1,
-    "make": "Ford Fusion",
+    {
+    "make": "BMW",
     "picture": "images/camaro.jpg",
+    "isAvailable": true,
+    "rentee":"0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
+    "owner":  "0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
     "year": 2017,
-    "licenseNumber": "Scottish Terrier",
-    "cost": "Tooleville, West Virginia"
-  },
-  {
-    "id": 2,
-    "make": "Chevy Camaro",
-    "picture": "images/hondaCivic.jpg",
-    "year": 2017,
-    "licenseNumber": "French Bulldog",
-    "cost": "Freeburn, Idaho"
-  },
-  {
-    "id": 3,
-    "make": "Honda Civic",
-    "picture": "images/fordFusion.jpg",
-    "year": 2018,
-    "licenseNumber": "fordFusion",
-    "cost": "Camas, Pennsylvania"
-  },
-  {
-    "id": 4,
-    "make": "Honda Civic",
-    "picture": "images/hondaCivic.jpg",
-    "year": 2018,
-    "licenseNumber": "French Bulldog",
-    "cost": "Gerber, South Dakota"
-  },
-  {
-    "id": 5,
-    "make": "Ford Fusion",
-    "picture": "images/hondaCivic.jpg",
-    "year": 2016,
-    "licenseNumber": "French Bulldog",
-    "cost": "Innsbrook, Illinois"
-  },
-  {
-    "id": 6,
-    "make": "BMW M5",
-    "picture": "images/bmwm5.jpg",
-    "year": 2017,
-    "licenseNumber": "Golden Retriever",
-    "cost": "Soudan, Louisiana"
-  },
-  {
-    "id": 7,
-    "make": "Chevy Camaro",
-    "picture": "images/bmwm5.jpg",
-    "year": 2017,
-    "licenseNumber": "Golden Retriever",
-    "cost": "Jacksonwald, Palau"
-  },
-  {
-    "id": 8,
-    "make": "BMW M5",
-    "picture": "images/hondaCivic.jpg",
-    "year": 2017,
-    "licenseNumber": "French Bulldog",
-    "cost": "Honolulu, Hawaii"
-  },
-  {
-    "id": 9,
-    "make": "Ford Fusion",
-    "picture": "images/fordFusion.jpg",
-    "year": 2018,
-    "licenseNumber": "fordFusion",
-    "cost": "Matheny, Utah"
-  },
-  {
-    "id": 10,
-    "make": "Honda Civic",
-    "picture": "images/fordFusion.jpg",
-    "year": 2018,
-    "licenseNumber": "fordFusion",
-    "cost": "Tyhee, Indiana"
-  },
-  {
-    "id": 11,
-    "make": "BMW M5",
-    "picture": "images/camaro.jpg",
-    "year": 2016,
-    "licenseNumber": "Scottish Terrier",
-    "cost": "Windsor, Montana"
-  },
-  {
-    "id": 12,
-    "make": "Honda Civic",
-    "picture": "images/hondaCivic.jpg",
-    "year": 2018,
-    "licenseNumber": "French Bulldog",
-    "cost": "Kingstowne, Nevada"
-  },
-  {
-    "id": 13,
-    "make": "Honda Civic",
-    "picture": "images/bmwm5.jpg",
-    "year": 2018,
-    "licenseNumber": "Golden Retriever",
-    "cost": "Sultana, Massachusetts"
-  },
-  {
-    "id": 14,
-    "make": "Ford Fusion",
-    "picture": "images/bmwm5.jpg",
-    "year": 2018,
-    "licenseNumber": "Golden Retriever",
-    "cost": "Broadlands, Oregon"
-  },
-  {
-    "id": 15,
-    "make": "Chevy Camaro",
-    "picture": "images/bmwm5.jpg",
-    "year": 2016,
-    "licenseNumber": "Golden Retriever",
-    "cost": "Dawn, Wisconsin"
+    "licenseNumber": "445115",
+    "carId": 1
   }
 ]

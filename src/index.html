@@ -18,14 +18,33 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Decentral Rental</h1>
-          <hr/>
-          <br/>
-        </div>
-      </div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-push-2">
+      <h1 class="text-center">Decentral Rental</h1>
+      <hr/>
+      <br/>
+    </div>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="New Car Details">Add a Car for Rent</label>
+      <input type="text" class="form-control" id="makeInfo" aria-describedby="carModel" placeholder="Enter Model">
+      <small id="example" class="form-text text-s">Example: Honda Civic</small>
+      <p></p>
+      <label for="owner">Owner Address</label>
+      <input type="text" class="form-control" id="owner" placeholder="0x00..">
+      <small id="example" class="form-text text-s">Warning: Only the owner can mark car as returned</small>
+      <p></p>
+      <label for="year">Car Year</label>
+      <input type="number" class="form-control" id="year" placeholder="2017">
+      <label for="year">License Plate Number</label>
+      <input type="text" class="form-control" id="licenseNumber" placeholder="GTYN-321F">
+    </div>
+    <button type="submit" class="btn btn-primary btn-addCar">Add Car</button>
+  </form>
 
       <div id="carsRow" class="row">
         <!-- CARS LOAD HERE -->
@@ -39,12 +58,14 @@
             <h3 class="panel-title">Honda Civic</h3>
           </div>
           <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjB_MDqk4DdAhUPJ3wKHRMdAjMQjRx6BAgBEAU&url=https%3A%2F%2Fwww.stingraychevrolet.com%2Fchevrolet-camaro%2F&psig=AOvVaw2ZBigmse0COp35c5jZ0Tlz&ust=1535009936731741" data-holder-rendered="true">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="images/camaro.jpg" data-holder-rendered="false">
             <br/><br/>
-            <strong>Type</strong>: <span class="car-type">Chevy Camaro</span><br/>
-            <strong>Year</strong>: <span class="car-year">2018</span><br/>
-            <strong>Cost</strong>: <span class="car-cost">$58/Day</span><br/><br/>
-            <button class="btn btn-default btn-rent" type="button" data-id="0">Rent</button>
+            <strong>Make</strong>: <span class="car-make">Chevy Camaro</span><br/>
+            <strong>Year</strong>: <span class="car-year">2015</span><br/>
+            <strong>License</strong>: <span class="car-licenseNumber">XXXX-XXX</span><br/>
+            <strong>Available</strong>: <span class="car-isAvailable">No</span><br/><br/>
+            <button class="btn btn-success btn-rent" type="button" data-id="0">Rent</button>
+            <button class="btn btn-success btn-return" type="button" data-id="0">Return</button>
           </div>
         </div>
       </div>
