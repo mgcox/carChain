@@ -15,7 +15,7 @@ contract Rental {
 
     //Check if sender isAdmin, this function alone could be added to multiple functions for manager only method calls
     modifier isAdmin() {
-        require(msg.sender == manager);
+        assert(msg.sender == manager);
         _;
     }
     
@@ -38,7 +38,7 @@ contract Rental {
     }
 
     //Renting a car 
-    function rent(uint carId) public payable returns (bool) {
+    function rent(uint carId) public returns (bool) {
        
        //Never Ever want to be false, therefore we use assert
        assert(!stopped); 
@@ -97,8 +97,8 @@ contract Rental {
     }
     
     //Allow Car Owner to Mark car as returned
-    function returnCar(uint carId) public payable returns (bool) {
-        require(!stopped); 
+    function returnCar(uint carId) public  returns (bool) {
+        assert(!stopped); 
         
         //Get Specific car
         CarLib.Car storage specificCar = rentals[carId];
